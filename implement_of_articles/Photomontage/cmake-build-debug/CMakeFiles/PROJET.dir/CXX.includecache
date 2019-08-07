@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/collage.h
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+iostream
+-
+maxflow/graph.h
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/maxflow/graph.h
+data.h
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/data.h
+
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/data.h
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+iostream
+-
+
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/main.cpp
+opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+iostream
+-
+maxflow/graph.h
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/maxflow/graph.h
+collage.h
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/collage.h
+data.h
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/data.h
+
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/maxflow/block.h
+block.h
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/maxflow/block.h
+stdlib.h
+-
+
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/maxflow/graph.h
+string.h
+-
+block.h
+/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/maxflow/block.h
+assert.h
+-
+

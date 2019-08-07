@@ -1,0 +1,397 @@
+/usr/local/APP/jetbrains/clion/2018.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)"
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:53 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:56 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:59 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:62 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:65 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:68 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:71 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:74 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:77 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:80 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:83 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:86 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:89 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:92 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:95 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:98 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:101 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:104 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:107 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:110 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:113 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:116 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:119 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:122 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:125 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:128 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:131 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:134 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:137 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:140 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:143 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:146 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:149 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:152 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:155 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:158 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:161 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:164 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:167 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:170 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:173 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/share/OpenCV/OpenCVModules.cmake:176 (add_library):
+  ADD_LIBRARY called with SHARED option but the target platform does not
+  support dynamic linking.  Building a STATIC library instead.  This may lead
+  to problems.
+Call Stack (most recent call first):
+  /usr/share/OpenCV/OpenCVConfig.cmake:111 (include)
+  CMakeLists.txt:4 (FIND_PACKAGE)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- The C compiler identification is GNU 8.2.0
+-- The CXX compiler identification is GNU 8.2.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cs/usr/adi.kobi/Desktop/PhotoMontage-master (2)/cmake-build-debug
