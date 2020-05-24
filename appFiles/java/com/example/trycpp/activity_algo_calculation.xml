@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context=".algoCalculation">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="164dp"
+        android:layout_height="227dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+    <ImageView
+        android:id="@+id/resultView"
+        android:layout_width="389dp"
+        android:layout_height="362dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="8dp"
+        android:background="#0000"
+        android:padding="1dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="307dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="31dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="We are making your pic\n so you can picit!"
+        android:textColor="#0B1A42"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/resultView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"
+        android:layout_marginLeft="172dp"
+        android:layout_marginRight="162dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="please wait"
+        android:textColor="#0B1A42"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/resultView"
+        app:layout_constraintVertical_bias="0.493" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

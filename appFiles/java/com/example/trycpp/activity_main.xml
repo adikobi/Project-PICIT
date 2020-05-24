@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/blue"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="234dp"
+        android:layout_height="143dp"
+        android:layout_alignStart="@+id/imageToUpload"
+        android:layout_alignEnd="@+id/imageToUpload"
+        android:layout_alignBottom="@+id/imageToUpload"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="43dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="click here to upload image"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0B1A42"
+        android:textSize="35sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="@+id/imageToUpload"
+        app:layout_constraintEnd_toEndOf="@+id/imageToUpload"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="@+id/imageToUpload"
+        app:layout_constraintTop_toTopOf="@+id/imageToUpload"
+        android:layout_alignLeft="@+id/imageToUpload"
+        android:layout_alignRight="@+id/imageToUpload"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="26dp" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/downloadImage"-->
+    <!--        android:layout_width="223dp"-->
+    <!--        android:layout_height="215dp"-->
+    <!--        android:layout_marginLeft="100dp"-->
+    <!--        android:layout_marginTop="350dp"-->
+    <!--        android:background="#123456"-->
+    <!--        android:padding="1dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.74" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/bottonDownload"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/downloadImage"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:text="download image"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.897" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/bottonUpload"-->
+    <!--        style="@android:style/Widget.Button"-->
+    <!--        android:layout_width="398dp"-->
+    <!--        android:layout_height="39dp"-->
+    <!--        android:layout_marginTop="371dp"-->
+    <!--        android:layout_marginBottom="241dp"-->
+    <!--        android:fontFamily="@font/rubik_bold"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="start"-->
+
+
+    <ImageView
+        android:id="@+id/imageToUpload"
+        android:layout_width="330dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="-11dp"
+        android:layout_marginBottom="371dp"
+        android:background="#01ffffca"
+        android:foregroundGravity="center_horizontal"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <ImageButton
+        android:id="@+id/bottonUpload"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="126dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="182dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageToUpload"
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/start"
+        android:layout_marginLeft="126dp"
+        android:layout_marginRight="103dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
