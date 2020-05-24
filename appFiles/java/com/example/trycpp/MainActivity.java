@@ -3,42 +3,35 @@ package com.example.trycpp;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import org.opencv.android.OpenCVLoader;
-import org.opencv.android.Utils;
-import org.opencv.core.CvType;
-import org.opencv.core.Mat;
-import org.opencv.core.Scalar;
-import org.opencv.imgproc.Imgproc;
-
-import java.util.ArrayList;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
 
     // Used to load the 'native-lib' library on application startup.
     static {
-        System.loadLibrary("native-lib");
         System.loadLibrary("opencv_java3");
+
+        System.loadLibrary("native-lib");
     }
 
     private static final int RESUALT_LOAD_IMAGE = 1;
 
     ImageView imageToUpload;
-    ImageView downloadImage;
+//    ImageView downloadImage;
 
-    Button buttonToUpload;
+    ImageButton buttonToUpload;
     Button buttonToDownload;
 
     static int counter = 0;
@@ -47,18 +40,19 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         imageToUpload = (ImageView) findViewById(R.id.imageToUpload);
-        downloadImage = (ImageView) findViewById(R.id.downloadImage);
+//        downloadImage = (ImageView) findViewById(R.id.downloadImage);
 
-        buttonToUpload = (Button) findViewById(R.id.bottonUpload);
-        buttonToDownload = (Button) findViewById(R.id.bottonDownload);
+        buttonToUpload = (ImageButton) findViewById(R.id.bottonUpload);
+//        buttonToDownload = (Button) findViewById(R.id.bottonDownload);
 
         imageToUpload.setOnClickListener(this);
         buttonToUpload.setOnClickListener(this);
-        buttonToDownload.setOnClickListener(this);
+//        buttonToDownload.setOnClickListener(this);
 
     }
 
@@ -68,7 +62,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         switch (v.getId()){
             case R.id.imageToUpload:
                 Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
                 startActivityForResult(galleryIntent, RESUALT_LOAD_IMAGE);
+
                 break;
             case R.id.bottonUpload:
                 nextActivity(v);
@@ -94,7 +90,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 Bitmap bmp = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
                 imageMats[counter] = bmp;
                 counter = (counter + 1) % 3;
-                imageToUpload.setImageBitmap(bmp);
+
+                RoundedBitmapDrawable round = RoundedBitmapDrawableFactory.create(getResources(), bmp);
+                round.setCornerRadius(200);
+                imageToUpload.setImageDrawable(round);
             }catch (Exception e){
                 return;
             }
@@ -122,5 +121,3 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     //public native int validate3(int matAddrGr);
     //public native int start(int a);
 }
-
-

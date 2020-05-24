@@ -1,32 +1,33 @@
 package com.example.trycpp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 import org.opencv.android.Utils;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
-import org.opencv.imgproc.Imgproc;
 
 import java.util.ArrayList;
-import org.opencv.android.Utils;
+
 
 public class SecondActivity extends AppCompatActivity {
     static int N;
     static Bitmap[] imageBitmaps;
     ImageView imageView2;
-    Button next;
+    LottieAnimationView lottieanimationview;
+    ImageButton next;
+    public static int[] po;
+    public static long address;
+
     int counter = 1;
     int numOfElement = 0;
 
@@ -45,15 +46,24 @@ public class SecondActivity extends AppCompatActivity {
     private View.OnTouchListener handleTouch = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View view, MotionEvent motionEvent) {
+
+            float scale = Math.min((float)view.getWidth() / imageBitmaps[0].getWidth(), (float)view.getHeight() / imageBitmaps[0].getHeight());
+            float offset_x = ((float)view.getWidth() - imageBitmaps[0].getWidth() * scale) / 2;
+            float offset_y = ((float)view.getHeight() - imageBitmaps[0].getHeight() * scale) / 2;
+
             int x = (int) motionEvent.getX();
             int y = (int) motionEvent.getY();
+
+            int update_x = Math.round((x - offset_x)/scale);
+            int update_y = Math.round((y - offset_y)/scale);
             // this add every point twice
-            points.add(x);
-            points.add(y);
+            points.add(update_x);
+            points.add(update_y);
             numOfElement += 2;
             return true;
         }
     };
+
 
     int[] convertArrayListToArray(ArrayList<Integer> src)
     {
@@ -81,12 +91,18 @@ public class SecondActivity extends AppCompatActivity {
             // need to move to other activity
             points.set(counter, numOfElement);
             points.set(0, counter);
-            int[] po = convertArrayListToArray(points);
+            po = convertArrayListToArray(points);
             Bitmap result = Bitmap.createBitmap(imageBitmaps[0].getWidth(), imageBitmaps[0].getHeight(), Bitmap.Config.ARGB_8888);
-            Mat newMat = new Mat(imageBitmaps[0].getWidth(), imageBitmaps[0].getHeight(), CvType.CV_8UC3);
-            run(po, newMat.getNativeObjAddr()); // do the algorithm
-            Utils.matToBitmap(newMat, result);
-            imageView2.setImageBitmap(result);
+            Mat newMat = new Mat(imageBitmaps[0].getHeight(), imageBitmaps[0].getWidth(), CvType.CV_8UC3);
+
+
+            Intent myIntent = new Intent(SecondActivity.this, algoCalculation.class);
+            address = newMat.getNativeObjAddr();
+            SecondActivity.this.startActivity(myIntent);
+
+//            run(po, newMat.getNativeObjAddr()); // run the algorithm
+//            Utils.matToBitmap(newMat, result);
+//            imageView2.setImageBitmap(result);
         }
     }
 
@@ -95,8 +111,10 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         imageView2 = (ImageView) findViewById(R.id.imageView2);
-        next = (Button) findViewById(R.id.nextButton);
+        next = (ImageButton) findViewById(R.id.nextButton);
         imageBitmaps = MainActivity.imageBitMaps;
+        lottieanimationview = findViewById(R.id.animation_view);
+
         N = MainActivity.counter;
 
         // save place to num of points in every image
@@ -107,32 +125,23 @@ public class SecondActivity extends AppCompatActivity {
 
         for (Bitmap image : imageBitmaps)
         {
-            ////Bitmap result = Bitmap.createBitmap(imageBitmaps[0].getWidth(), imageBitmaps[0].getHeight(), Bitmap.Config.ARGB_8888);
-            Mat MatToSent = new Mat(image.getWidth(), image.getHeight(), CvType.CV_8UC3);
-            //Mat getMat = new Mat(image.getWidth(), image.getHeight(), CvType.CV_8UC1);
-            //Bitmap im = Bitmap.createBitmap(image.getWidth(), image.getHeight(), Bitmap.Config.ARGB_8888);
+            Mat MatToSent = new Mat(image.getHeight(), image.getWidth(), CvType.CV_8UC3);
             Utils.bitmapToMat(image, MatToSent);
-            // send the image to cpp as mat
-            //convertNativeGray(MatToSent.getNativeObjAddr(), getMat.getNativeObjAddr());
-            //Utils.matToBitmap(getMat, im);
-            getImageFromAndroid(MatToSent.getNativeObjAddr());
-            //showIm(imageBitmaps[0]);
-//            imageView2.setImageBitmap(im);
-//            int a = 6;
-//            //getImage(image);
-        }
 
+            // send the image to cpp as mat
+            getImageFromAndroid(MatToSent.getNativeObjAddr());
+        }
         showIm(imageBitmaps[0]);
         imageView2.setOnTouchListener(handleTouch);
-
-
     }
 
 
+
     public native void getImageFromAndroid(long getImage);
-    public native int convertNativeGray(long matAddrRgba, long matAddrGray);
-    public native int run(int[] points, long addrGray);
-    public native Bitmap getPoints(int[] points, Bitmap imageMat);
-    public native Mat start(int a, Mat imageMat);
-    public native Bitmap getImage(Bitmap imageMat);
+//    public static native int run(int[] points, long addrGray);
+
+    //public native int convertNativeGray(long matAddrRgba, long matAddrGray);
+    //public native Bitmap getPoints(int[] points, Bitmap imageMat);
+    //public native Mat start(int a, Mat imageMat);
+    //public native Bitmap getImage(Bitmap imageMat);
 }
