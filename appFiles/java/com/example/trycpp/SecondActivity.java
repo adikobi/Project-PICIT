@@ -92,17 +92,12 @@ public class SecondActivity extends AppCompatActivity {
             points.set(counter, numOfElement);
             points.set(0, counter);
             po = convertArrayListToArray(points);
-            Bitmap result = Bitmap.createBitmap(imageBitmaps[0].getWidth(), imageBitmaps[0].getHeight(), Bitmap.Config.ARGB_8888);
             Mat newMat = new Mat(imageBitmaps[0].getHeight(), imageBitmaps[0].getWidth(), CvType.CV_8UC3);
 
 
             Intent myIntent = new Intent(SecondActivity.this, algoCalculation.class);
             address = newMat.getNativeObjAddr();
             SecondActivity.this.startActivity(myIntent);
-
-//            run(po, newMat.getNativeObjAddr()); // run the algorithm
-//            Utils.matToBitmap(newMat, result);
-//            imageView2.setImageBitmap(result);
         }
     }
 
@@ -138,10 +133,4 @@ public class SecondActivity extends AppCompatActivity {
 
 
     public native void getImageFromAndroid(long getImage);
-//    public static native int run(int[] points, long addrGray);
-
-    //public native int convertNativeGray(long matAddrRgba, long matAddrGray);
-    //public native Bitmap getPoints(int[] points, Bitmap imageMat);
-    //public native Mat start(int a, Mat imageMat);
-    //public native Bitmap getImage(Bitmap imageMat);
 }

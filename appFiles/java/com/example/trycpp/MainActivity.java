@@ -6,11 +6,10 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,13 +28,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private static final int RESUALT_LOAD_IMAGE = 1;
 
     ImageView imageToUpload;
-//    ImageView downloadImage;
-
+    TextView uploadAnother;
     ImageButton buttonToUpload;
-    Button buttonToDownload;
 
     static int counter = 0;
-    static Bitmap[] imageMats = new Bitmap[3];
+    static Bitmap[] imageMats = new Bitmap[4];
     static Bitmap[] imageBitMaps;
 
     @Override
@@ -45,14 +42,13 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         setContentView(R.layout.activity_main);
 
         imageToUpload = (ImageView) findViewById(R.id.imageToUpload);
-//        downloadImage = (ImageView) findViewById(R.id.downloadImage);
-
+        uploadAnother = (TextView) findViewById(R.id.textView4);
         buttonToUpload = (ImageButton) findViewById(R.id.bottonUpload);
-//        buttonToDownload = (Button) findViewById(R.id.bottonDownload);
+        buttonToUpload.setVisibility(View.INVISIBLE);
+        uploadAnother.setVisibility(View.INVISIBLE);
 
         imageToUpload.setOnClickListener(this);
         buttonToUpload.setOnClickListener(this);
-//        buttonToDownload.setOnClickListener(this);
 
     }
 
@@ -68,11 +64,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 break;
             case R.id.bottonUpload:
                 nextActivity(v);
-
-//            case R.id.bottonDownload:
-//                String name = "image0"; // todo insert here the name that we want to download
-//                new DownloadImage(name).execute();
-//                break;
+                break;
         }
     }
 
@@ -82,18 +74,24 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RESUALT_LOAD_IMAGE && resultCode == RESULT_OK && data != null && data.getData() != null) {
             Uri selectedImage = data.getData();
-            Log.i("URI",selectedImage.toString());
 
             BitmapFactory.Options bmpFactoryOptions = new BitmapFactory.Options();
             bmpFactoryOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;
             try{
                 Bitmap bmp = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
                 imageMats[counter] = bmp;
-                counter = (counter + 1) % 3;
+                counter = (counter + 1) % 4;
 
                 RoundedBitmapDrawable round = RoundedBitmapDrawableFactory.create(getResources(), bmp);
                 round.setCornerRadius(200);
                 imageToUpload.setImageDrawable(round);
+                if (counter>0){
+                    uploadAnother.setVisibility(View.VISIBLE);
+
+                }
+                if (counter > 1){
+                    buttonToUpload.setVisibility(View.VISIBLE);
+                }
             }catch (Exception e){
                 return;
             }
@@ -111,13 +109,4 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         startActivity(i);
     }
 
-
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    //public native String validate(long matAddrGr, long matAddrRgb);
-    //public native double[] validate2(int[] matAddrGr);
-    //public native int validate3(int matAddrGr);
-    //public native int start(int a);
 }
