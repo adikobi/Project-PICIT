@@ -1,6 +1,5 @@
 #pragma once
 #include <opencv2/core.hpp>
-//#include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <iostream>
 
@@ -24,12 +23,6 @@ private:
 
 public:
 	Collage(Data *Dat);
-
-	int getNImages();
-
-	int getImageHeight();
-
-	int getImageWidth();
 
 	Mat computePhotomontage(INSIDE_MODE insideMode, OUTSIDE_MODE outsideMode);
 

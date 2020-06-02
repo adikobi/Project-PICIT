@@ -1,5 +1,4 @@
 #pragma once
-//#include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <iostream>
 #include <vector>
@@ -15,7 +14,7 @@ struct Data {
 	vector<Mat> gradientXSources;
 	vector<Mat> gradientYSources;
 	int height, width; // height and width of result image.
-	Mat SourceConstraints; //Matrice de contraintes de source.
+	Mat SourceConstraints; //Matrix of the constraints of the source.
 	int selectSource;
 	vector<Vec3b> colors;
 
@@ -31,12 +30,5 @@ struct Data {
 	}
 };
 
-struct Argument {
-	Data *D;
-	int selectSource;
-};
-
 int main();
-void static onMouse(int event, int x, int y, int foo, void *p);
-//Mat computePhotomontage(Data *D);
 }
