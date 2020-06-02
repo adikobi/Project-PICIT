@@ -36,46 +36,6 @@
         android:layout_marginLeft="41dp"
         android:layout_marginRight="26dp" />
 
-    <!--    <ImageView-->
-    <!--        android:id="@+id/downloadImage"-->
-    <!--        android:layout_width="223dp"-->
-    <!--        android:layout_height="215dp"-->
-    <!--        android:layout_marginLeft="100dp"-->
-    <!--        android:layout_marginTop="350dp"-->
-    <!--        android:background="#123456"-->
-    <!--        android:padding="1dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.498"-->
-    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
-    <!--        app:layout_constraintRight_toRightOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.74" />-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/bottonDownload"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_below="@+id/downloadImage"-->
-    <!--        android:layout_marginTop="15dp"-->
-    <!--        android:text="download image"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.0"-->
-    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
-    <!--        app:layout_constraintRight_toRightOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.897" />-->
-
-    <!--    <Button-->
-    <!--        android:id="@+id/bottonUpload"-->
-    <!--        style="@android:style/Widget.Button"-->
-    <!--        android:layout_width="398dp"-->
-    <!--        android:layout_height="39dp"-->
-    <!--        android:layout_marginTop="371dp"-->
-    <!--        android:layout_marginBottom="241dp"-->
-    <!--        android:fontFamily="@font/rubik_bold"-->
-    <!--        android:gravity="center"-->
-    <!--        android:text="start"-->
-
 
     <ImageView
         android:id="@+id/imageToUpload"
@@ -115,6 +75,24 @@
         app:srcCompat="@drawable/start"
         android:layout_marginLeft="126dp"
         android:layout_marginRight="103dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="384dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/rubik_bold"
+        android:gravity="center"
+        android:text="UPLOAD ANOTHER IMAGE"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/bottonUpload"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
