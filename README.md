@@ -1,6 +1,5 @@
 # Project-PICIT
 
-readme for our projrct!
 
 With the introduction of digital cameras and smart phones into our lives, we are never satisfied with one single photograph.  Every event on our lives of documented in a series of nearly-identical photos, which are shared on social media. Yet, there is always the one person who is dissatisfied.  We are here to satisfy everyone!
 Over the course of this project, we wish to develop an algorithm which will allow the generation of the perfect photograph, which will include each person's favorite moment.
